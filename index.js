@@ -5,7 +5,7 @@ const title = document.querySelector(".js-title");
 
 const SERVER_SUCCESS_RESPONSE_CLASS = "body-response";
 
-btn.addEventListener("click", function () {
+btn.addEventListener("click", () => {
   fetch("https://www.boredapi.com/api/activity/")
     .then((response) => response.json())
     .then((data) => {
